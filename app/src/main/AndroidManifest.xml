@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CobaRecyclerView"
         tools:targetApi="31">
         <activity
+            android:name="com.example.Belajarsqlite.MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".ListMhsActivity"
             android:exported="false" />
         <activity

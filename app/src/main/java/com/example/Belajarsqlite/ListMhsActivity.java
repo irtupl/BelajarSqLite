@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.cobarecyclerview.R;
+
 import java.util.ArrayList;
 
 public class ListMhsActivity extends AppCompatActivity {
@@ -19,7 +21,7 @@ public class ListMhsActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
-        ArrayList<Mhs> mhsList = getIntent().getExtras().getParcelableArrayList("mhsList");
+        ArrayList<MhsModel> mhsList = getIntent().getExtras().getParcelableArrayList("mhsList");
 
         MhsAdapter mhsAdapter = new MhsAdapter(mhsList);
 
